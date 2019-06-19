@@ -1,8 +1,4 @@
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/guillaumebriday)
-[![Docker Automated build](https://img.shields.io/docker/automated/guillaumebriday/traefik-custom-error-pages.svg)](https://hub.docker.com/r/guillaumebriday/traefik-custom-error-pages/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/guillaumebriday/traefik-custom-error-pages.svg)](https://hub.docker.com/r/guillaumebriday/traefik-custom-error-pages/)
-[![Docker Stars](https://img.shields.io/docker/stars/guillaumebriday/traefik-custom-error-pages.svg)](https://hub.docker.com/r/guillaumebriday/traefik-custom-error-pages/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/64de9cea-fa16-4f76-b5b8-a1abb5eb4e2f/deploy-status)](https://app.netlify.com/sites/traefik-custom-error-pages/deploys)
+[![Docker Automated build](https://img.shields.io/docker/automated/jackjoe/traefik-custom-error-pages.svg)](https://hub.docker.com/r/jackjoe/traefik-custom-error-pages/)
 
 # Custom error pages for Traefik
 
@@ -16,22 +12,20 @@ $ bundle install
 
 ## Development
 
-The current folder will be generated into ./_site :
+The current folder will be generated into ./\_site :
+
 ```bash
 $ jekyll build
 ```
 
 Build the site on the preview server :
+
 ```bash
 $ jekyll serve
 $ open http://127.0.0.1:4000/
 ```
 
 ## Production
-
-You can use this project in production with Netlify:
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/guillaumebriday/traefik-custom-error-pages)
 
 ## How to use with Traefik and Docker
 
@@ -45,7 +39,8 @@ $ docker run -d --restart always guillaumebriday/traefik-custom-error-pages
 
 ## Credits
 
-I used the [Laravel](https://laravel.com/) default HTTP error pages.
+We used the [Laravel](https://laravel.com/) default HTTP error pages.
+Everything was set originally by [guillaumebriday](https://github.com/guillaumebriday/traefik-custom-error-pages)
 
 ## Contributing
 
