@@ -34,13 +34,13 @@ Labels are already define in the image to work with Traefik.
 To use it in production just run the container :
 
 ```bash
-$ docker run -d --restart always guillaumebriday/traefik-custom-error-pages
+$ docker run -d --restart always jackjoe/traefik-custom-error-pages
 ```
 
 ## Credits
 
 We used the [Laravel](https://laravel.com/) default HTTP error pages.
-Everything was set originally by [guillaumebriday](https://github.com/guillaumebriday/traefik-custom-error-pages)
+Everything was set originally by [guillaumebriday](https://github.com/guillaumebriday/traefik-custom-error-pages).
 
 ## Contributing
 
