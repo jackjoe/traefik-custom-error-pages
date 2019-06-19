@@ -22,6 +22,19 @@ markdown: kramdown
 plugins:
   - octopress-minify-html
 
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: true
+  startings: [html, head, body]
+
+sass:
+  style: compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
