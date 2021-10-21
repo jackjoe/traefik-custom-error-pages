@@ -1,8 +1,11 @@
-# jekyll
-FROM jekyll/builder:latest as jekyll
+FROM ruby:2.7.0-alpine3.11 as jekyll
+
 WORKDIR /tmp
 COPY . /tmp
+RUN rm Gemfile.lock
 
+RUN apk add --no-cache g++ gcc make musl-dev
+RUN bundle install
 RUN jekyll build
 
 # nginx
