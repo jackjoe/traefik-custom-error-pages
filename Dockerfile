@@ -1,11 +1,14 @@
 FROM ruby:2.7.0-alpine3.11 as jekyll
 
+RUN apk add --no-cache g++ gcc make musl-dev
+
 WORKDIR /tmp
+COPY Gemfile /tmp/Gemfile
+RUN bundle install
+
 COPY . /tmp
 RUN rm Gemfile.lock
 
-RUN apk add --no-cache g++ gcc make musl-dev
-RUN bundle install
 RUN jekyll build
 
 # nginx
