@@ -83,7 +83,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   octopress-minify-html
-  tzinfo-data
 
 BUNDLED WITH
-   1.16.1
+   1.17.2
