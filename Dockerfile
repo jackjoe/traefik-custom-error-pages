@@ -1,4 +1,4 @@
-FROM ruby:2.7.0-alpine3.11 as jekyll
+FROM ruby:3-alpine3.17 as jekyll
 
 RUN apk add --no-cache g++ gcc make musl-dev
 

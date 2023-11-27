@@ -25,6 +25,20 @@ $ jekyll serve
 $ open http://127.0.0.1:4000/
 ```
 
+## Docker
+
+Build
+
+```bash
+docker build -t jackjoe/traefik-custom-error-pages .
+```
+
+Run
+
+```bash
+docker run --rm -p 8080:80 jackjoe/traefik-custom-error-pages
+```
+
 ## Production
 
 ## How to use with Traefik and Docker
